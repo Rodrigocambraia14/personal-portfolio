@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/header/footer/footer.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FooterComponent } from './layout/header/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    DragDropModule,
     BrowserAnimationsModule
   ],
   providers: [],

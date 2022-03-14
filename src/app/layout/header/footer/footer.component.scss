@@ -1,0 +1,39 @@
+.footer{
+
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: inline-block;
+
+            svg {
+                width: 45px;
+                transition: .2s;
+
+                path {
+                    fill: white;
+                }
+              }
+
+            svg:hover {
+                border-bottom: 1px solid #f19101;
+                transform: scale(1.2);
+
+                path {
+                    fill: #f19101;
+                }
+
+              }
+        }
+    }
+}
+  

@@ -31,13 +31,16 @@ export class AppComponent implements OnInit{
       this.downloaded = false;
       return;
     }
-    
+
+    setTimeout( () => { 
       const a = document.createElement('a')
-      a.href = url
-      a.download = url.split('/').pop()
-      document.body.appendChild(a)
-      a.click()
-      document.body.removeChild(a)
-      this.downloaded = true;
+    a.href = url
+    a.download = url.split('/').pop()
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    this.downloaded = true;
+  }, 2900 );
+      
   }
 }
