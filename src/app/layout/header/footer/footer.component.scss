@@ -11,16 +11,44 @@
     ul {
         list-style: none;
         padding: 0;
+        
+
+        li:nth-child(1) {
+            opacity: 0;
+            animation: fadeIn 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 9s;
+        }
+        li:nth-child(2) {
+            opacity: 0;
+            animation: fadeIn 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 9.5s;
+        }
+        li:nth-child(3) {
+            opacity: 0;
+            animation: fadeIn 1s 1;
+            animation-fill-mode: forwards;
+            animation-delay: 10s;
+        }
 
         li {
             display: inline-block;
+            
+
+            
 
             svg {
                 width: 45px;
                 transition: .2s;
+                animation: inputShadow 1s normal;
+                animation-delay: 10.5s;
+
 
                 path {
                     fill: white;
+                    animation: colorChange 1s normal;
+                    animation-delay: 10.5s;
                 }
               }
 
@@ -36,4 +64,40 @@
         }
     }
 }
+
+@keyframes fadeIn {
+    100% {
+      opacity: 1.0;
+    }
+  }
+
+  @keyframes colorChange {
+    0%
+    {
+        fill: white;
+
+    }
+    50%{
+        fill:#f19101;
+
+    }
+    100%{
+        fill: white;
+
+    }
+}
+
+@keyframes inputShadow {
+    0%
+    {
+        fill: white;
+    }
+    50%{
+        fill:#f19101;
+    }
+    100%{
+        fill: white;
+    }
+}
+  
   
