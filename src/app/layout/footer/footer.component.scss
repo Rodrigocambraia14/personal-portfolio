@@ -17,19 +17,19 @@
             opacity: 0;
             animation: fadeIn 1s 1;
             animation-fill-mode: forwards;
-            animation-delay: 9s;
+            animation-delay: 6s;
         }
         li:nth-child(2) {
             opacity: 0;
             animation: fadeIn 1s 1;
             animation-fill-mode: forwards;
-            animation-delay: 9.5s;
+            animation-delay: 6.5s;
         }
         li:nth-child(3) {
             opacity: 0;
             animation: fadeIn 1s 1;
             animation-fill-mode: forwards;
-            animation-delay: 10s;
+            animation-delay: 7s;
         }
 
         li {
@@ -42,13 +42,13 @@
                 width: 45px;
                 transition: .2s;
                 animation: inputShadow 1s normal;
-                animation-delay: 10.5s;
+                animation-delay: 8s;
 
 
                 path {
                     fill: white;
                     animation: colorChange 1s normal;
-                    animation-delay: 10.5s;
+                    animation-delay: 8s;
                 }
               }
 

@@ -1,0 +1,41 @@
+<div class="container">
+  <div style="width: 50%; margin-top: 70px;">
+    <div class="typewriter">
+      <h1  >Hi! I'm a full-stack developer !</h1>
+    </div>
+
+    <div class="typewriter-2">
+      <h1  >Brazilian, {{ checkAge() }} years old.</h1>
+    </div>
+
+    <div class="typewriter-3">
+      <h1  >C# and Angular are my best co-workers</h1>
+    </div>
+
+    <div class="typewriter-4">
+      <h1  >Fun fact : I love Guinea pigs ! <img class="guinea-pig" src="../assets/guinea-pig.png" alt="Guinea pig" cdkDrag ></h1>
+    </div>
+  </div>
+
+  <div style="width: 50%;" class="icon-holder">
+    <div (click)="downloadPdf('../assets/docs/Estácio_ Alunos.pdf')" class="container-fluid" style="transform: scale(0.8);">
+      <div class="row">
+        <div id="ms-container">
+          <label for="ms-download">
+            <div class="ms-content">
+              <div class="ms-content-inside">
+                <input type="checkbox" id="ms-download" />
+                <div class="ms-line-down-container">
+                  <div class="ms-line-down"></div>
+                </div>
+                <div class="ms-line-point"></div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <span style="color: white;" class="download-text">Download my curriculum</span>
+  </div>
+</div>
+
