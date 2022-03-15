@@ -1,0 +1,10 @@
+.father {
+    display: flex;
+    flex-direction: row;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
