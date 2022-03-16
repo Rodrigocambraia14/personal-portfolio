@@ -1,8 +1,23 @@
+
+
 <div class="father">
-    <div >
-        <p style="color:white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, facere impedit voluptate assumenda maxime eos labore dicta qui eius magni rerum nobis, dolores fugit aliquid aut odit incidunt aspernatur est.</p>
+    <div class="father-inner">
+        <div class="options">
+            <div (click)="changeTextView('developer')">
+                <p class="inner-text" [ngClass]="{'is-selected': devText }">AS DEVELOPER</p>
+            </div>
+        
+            <div (click)="changeTextView('person')">
+                <p class="inner-text" [ngClass]="{'is-selected': personText}">AS PERSON</p>
+            </div>
+        </div>
+    
+    <p *ngIf="devText" style="color:white; padding-left: 50px; padding-top: 10px;">DEV Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, facere impedit voluptate assumenda maxime eos labore dicta qui eius magni rerum nobis, dolores fugit aliquid aut odit incidunt aspernatur est.</p>
+
+    <p *ngIf="personText" style="color:white; padding-left: 50px; padding-top: 10px;">PERSON Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, facere impedit voluptate assumenda maxime eos labore dicta qui eius magni rerum nobis, dolores fugit aliquid aut odit incidunt aspernatur est.</p>
+
     </div>
-    <div >
-        <img src="../assets/guinea-pig.png" alt="Eu">
+    <div>
+        <img class="profile-image" src="../assets/guinea-pig.png" alt="Eu">
     </div>
 </div>
