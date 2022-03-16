@@ -48,8 +48,8 @@
 
                 path {
                     fill: white;
-                    animation: colorChange 1s normal;
-                    animation-delay: 8s;
+                    animation: colorChange .7s normal;
+                    animation-delay: 7.3s;
                 }
               }
 
@@ -76,11 +76,9 @@
     0%
     {
         fill: white;
-
     }
     50%{
         fill:#f19101;
-
     }
     100%{
         fill: white;
