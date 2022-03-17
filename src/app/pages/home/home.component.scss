@@ -7,7 +7,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
         
     }
 }
@@ -136,6 +135,11 @@
 	border: 10px solid #f19101;
     box-shadow: #f19101 0px 0px 15px 2px;
 	border-radius: 100%;
+	transition: 0.3s;
+}
+
+.ms-content:hover {
+	transform: scale(1.1);
 }
 
 .ms-content-inside {

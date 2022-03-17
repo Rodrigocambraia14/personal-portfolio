@@ -11,6 +11,9 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -18,14 +21,17 @@ import { HomeComponent } from './pages/home/home.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
+    MatIconModule,
     DragDropModule,
     RouterModule,
+    MatCardModule,
     BrowserAnimationsModule,
   ],
   providers: [],
