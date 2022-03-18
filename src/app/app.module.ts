@@ -14,6 +14,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import { ContactComponent } from './pages/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import {MatCardModule} from '@angular/material/card';
     FooterComponent,
     HomeComponent,
     AboutMeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,7 @@ import {MatCardModule} from '@angular/material/card';
     DragDropModule,
     RouterModule,
     MatCardModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
   providers: [],

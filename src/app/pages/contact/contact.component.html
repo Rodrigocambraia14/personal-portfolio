@@ -1,0 +1,37 @@
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()"  autocomplete="off" class="form">
+
+  <div>
+    <label for="name">Name: </label>
+    <input id="v" type="text" formControlName="name" placeholder="Dovahkiin">
+  </div>
+    
+  <div>
+    <label for="email">E-mail: </label>
+    <input id="email" type="text" formControlName="email" placeholder="dragonborn@gmail.com">
+  </div>
+    
+    <div>
+        <label for="subject">Subject: </label>
+        <input id="subject" type="text" formControlName="subject" placeholder="I used to be an adventurer like you...">
+    </div>
+    
+
+    <div>
+        <label for="message">Message: </label>
+        <textarea id="message" type="text" formControlName="message" placeholder="I declare you as an honorable Thane of Whiterun !" rows="5"></textarea>
+    </div>
+    
+
+    <p class="end-text" *ngIf="!form.valid">Complete the form correctly to finish.</p>
+
+        <button id="btn" type="submit" [disabled]="!form.valid" [ngClass]="{'active': submitted == true}" [ngClass]="{'disable': !form.valid}">
+            <p id="btnText" class="initial-text" [ngClass]="{'final-text': submitted == true}">{{btnText}}</p>
+            <div class="check-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                </svg>
+            </div>
+        </button>
+  </form>
+</div>
