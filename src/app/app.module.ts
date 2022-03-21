@@ -16,6 +16,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import * as Mail from 'nodemailer/lib/mailer';
+import * as SMTPConnection from 'nodemailer/lib/smtp-connection';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     DragDropModule,
     RouterModule,
     MatCardModule,
+    HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
