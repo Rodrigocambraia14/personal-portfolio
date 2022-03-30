@@ -97,3 +97,20 @@
     }
 }
 
+
+@media only screen and (max-width: 768px) {
+    .father-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        height: 370px;
+        margin-bottom: 50px;
+    }
+
+    .footer-message {
+        margin-bottom: 100px;
+    }
+}
+

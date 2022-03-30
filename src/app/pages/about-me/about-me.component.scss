@@ -38,11 +38,11 @@
     flex-direction: row;
     margin-top: 50px;
     opacity: 0;
-    -webkit-animation: show-text 1s forwards;
-    -moz-animation:    show-text 1s forwards; 
-    -o-animation:      show-text 1s forwards; 
-    animation:         show-text 1s forwards; 
-    animation-delay: 1s;
+    -webkit-animation: show-text .5s forwards;
+    -moz-animation:    show-text .5s forwards; 
+    -o-animation:      show-text .5s forwards; 
+    animation:         show-text .5s forwards; 
+    animation-delay: .5s;
 
     div {
         display: flex;
@@ -79,3 +79,36 @@
 .is-selected {
     color:#f19101;
 }
+
+@media only screen and (max-width: 768px) {
+    .father {
+        flex-direction: column;
+    }
+
+    .options {
+        width: 100%;
+        padding: 0;
+    }
+
+    .father-inner {
+        p {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .profile-image {
+        margin: 0;
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-height: 844px) {
+	.profile-image {
+        margin: 0;
+        margin-top: 100px;
+    }
+}
+  

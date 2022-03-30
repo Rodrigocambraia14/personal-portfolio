@@ -2,6 +2,11 @@
     display: flex;
     flex-direction: row;
 
+	.container-inner {
+		width: 50%;
+		margin-top: 70px;
+	}
+
     .icon-holder {
         display: flex;
         justify-content: center;
@@ -14,7 +19,6 @@
 .typewriter{
     margin-top: 80px;
     opacity: 0;
-    width: 470px;
     -webkit-animation: appear 2s forwards;
     -moz-animation:    appear 2s forwards; 
     -o-animation:      appear 2s forwards; 
@@ -304,6 +308,98 @@
 		border: 10px solid #FFFFFF;
         box-shadow: #ffffff 0px 0px 15px 2px;
 
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	.container {
+		flex-direction: column !important;
+
+		.container-inner {
+			margin-top: 0;
+			width: 100%;
+		}
+
+		.typewriter{
+			font-size: 20px;
+			opacity: 0;
+			-webkit-animation: appear-mobile 2s forwards;
+			-moz-animation:    appear-mobile 2s forwards; 
+			-o-animation:      appear-mobile 2s forwards; 
+			animation:         appear-mobile 2s forwards; 
+			animation-delay: 1s;
+
+			h1 {
+				font-size: 20px;
+			}
+		}
+		
+		.typewriter-2 {
+			font-size: 20px;
+			opacity: 0;
+			-webkit-animation: appear-mobile-mobile 2s forwards;
+			-moz-animation:    appear-mobile 2s forwards; 
+			-o-animation:      appear-mobile 2s forwards; 
+			animation:         appear-mobile 2s forwards; 
+			animation-delay: 2s;
+			h1 {
+				font-size: 20px;
+			}
+		}
+		
+		.typewriter-3 {
+			opacity: 0;
+			-webkit-animation: appear-mobile 2s forwards;
+			-moz-animation:    appear-mobile 2s forwards; 
+			-o-animation:      appear-mobile 2s forwards; 
+			animation:         appear-mobile 2s forwards; 
+			animation-delay: 3s;
+
+			h1 {
+				font-size: 20px;
+			}
+		}
+		
+		.typewriter-4 {
+			opacity: 0;
+			-webkit-animation: appear-mobile 2s forwards;
+			-moz-animation:    appear-mobile 2s forwards; 
+			-o-animation:      appear-mobile 2s forwards; 
+			animation:         appear-mobile 2s forwards; 
+			animation-delay: 4s;
+			
+		}
+
+		@keyframes appear-mobile {
+			0% {
+				opacity: 0;
+				margin-left: 0;
+			}
+			100% {
+			   opacity: 1;
+			   margin-left: 20px;
+			}
+		}
+
+		.icon-holder {
+			width: 100% !important;
+
+			#ms-container {
+				margin-top: 0;
+			}
+
+			.container-fluid {
+				transform:scale(0.7) !important;
+			}
+		}
+		
+	}
+}
+
+@media only screen and (min-height: 844px) {
+	.icon-holder {
+		margin-top: 100px;
 	}
 }
   

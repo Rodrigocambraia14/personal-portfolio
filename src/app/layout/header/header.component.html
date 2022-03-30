@@ -1,9 +1,14 @@
 <div class="header">
-    <ul>
-        <li routerLink="/home" routerLinkActive="change-color">HOME</li>
-        <li routerLink="/about-me" routerLinkActive="change-color">ABOUT ME</li>
-        <li routerLink="/projects" routerLinkActive="change-color">PROJECTS</li>
-        <li routerLink="/contact" routerLinkActive="change-color">KEEP IN TOUCH !</li>
+        <label for="check" class="checkbtn" (click)="activateMenu=!activateMenu" #menuIcon>
+            <div class="line-1 menu"></div>
+            <div class="line-2 menu"></div>
+            <div class="line-3 menu"></div>
+        </label>
+    <ul [ngClass]="{'show-menu' : activateMenu, 'hide-menu' : !activateMenu}" #menu>
+        <li routerLink="/home" routerLinkActive="change-color" (click)="activateMenu=!activateMenu">HOME</li>
+        <li routerLink="/about-me" routerLinkActive="change-color" (click)="activateMenu=!activateMenu">ABOUT ME</li>
+        <li routerLink="/projects" routerLinkActive="change-color" (click)="activateMenu=!activateMenu">PROJECTS</li>
+        <li routerLink="/contact" routerLinkActive="change-color" (click)="activateMenu=!activateMenu">KEEP IN TOUCH !</li>
     </ul>
     <div class="line">
         <div class="line-point"></div>

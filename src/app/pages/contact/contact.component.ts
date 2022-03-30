@@ -43,7 +43,6 @@ export class ContactComponent implements OnInit{
       this.mailService.send(request);
 
       return this.btnText;
-      
     }
     else 
       return this.btnText = 'Formulário inválido !'

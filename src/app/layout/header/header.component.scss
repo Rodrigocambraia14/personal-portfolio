@@ -30,7 +30,7 @@
             animation-delay: 1.5s;
           }
         li:nth-child(4) {
-            animation-delay: 2.5s;
+            animation-delay: 2s;
           }
     }
 }
@@ -85,3 +85,117 @@
     }
   }
 
+  @media only screen and (min-width: 768px) {
+    .checkbox {
+        display: none;
+    }
+  }
+
+  //Responsive-layout
+
+  @media only screen and (max-width: 768px) {
+    .line-point{
+        display: none;
+    }
+
+
+    p, span, li {
+        font-size: 10px;
+    }
+
+    .hide-menu{
+        display: none !important;
+    }
+
+    h1 {
+        font-size: 12px;
+    }
+
+    label {
+        display: flex;
+        flex-direction: column;
+        height: 40px;
+        width: 100px;
+        padding: 5px;
+    }
+
+    .menu {
+        width: 0px;
+        height: 2px;
+        border-radius: 15px;
+        background-color: #f19101;
+        -webkit-animation: increase-menu 2s;
+        -moz-animation:    increase-menu 2s;
+        -o-animation:      increase-menu 2s;
+        animation:         increase-menu 2s;
+        animation-fill-mode: forwards;
+        margin: 5px;
+    }
+
+    li:nth-child(1) {
+        animation-delay: 0.3s;
+      }
+    li:nth-child(2) {
+        animation-delay: 0.6s;
+      }
+    li:nth-child(3) {
+        animation-delay: 0.9s;
+      }
+    li:nth-child(4) {
+        animation-delay: 1.2s;
+      }
+
+    .line-1 {
+        animation-delay: 2s;
+    }
+    .line-2 {
+        animation-delay: 2.5s;
+    }
+    .line-3 {
+        animation-delay: 3s;
+    }
+
+    @keyframes increase-menu {
+        100% {
+            width: 35px;
+            box-shadow: #f19101 0px 0px 15px 2px;
+        }
+    }
+
+    .show-menu {
+        display: flex !important;
+        justify-content: flex-start !important;
+        z-index: 2;
+        flex-direction: column;
+        box-shadow: 3px 3px 14px 3px black;
+        position: absolute;
+        top: 45px;
+        background-color: #111111;
+        border-radius: 15px;
+        height: 350px;
+        width: 0px;
+        padding: 0;
+        -webkit-animation: show-menu 1s;
+        -moz-animation:    show-menu 1s;
+        -o-animation:      show-menu 1s;
+        animation:         show-menu 1s;
+        animation-fill-mode: forwards;
+
+        li:first-child {
+            margin-top: 50px;
+        }
+        li {
+            font-size: 16px;
+            margin-bottom: 50px;
+            margin-left: 30px;
+        }
+    }
+
+    @keyframes show-menu {
+        100% {
+            width: 250px;
+        }
+
+        
+    }
+  }
