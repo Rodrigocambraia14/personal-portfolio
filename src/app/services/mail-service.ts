@@ -15,7 +15,6 @@ export class MailService{
   }
 
   send(email: any) {
-    debugger;
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     return this.http.post('https://formspree.io/f/xknyzyap',
         { name: email.name, replyto: email.email, subject: email.subject, message: email.messages },
