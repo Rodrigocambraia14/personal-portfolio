@@ -30,7 +30,7 @@
             animation-delay: 1.5s;
           }
         li:nth-child(4) {
-            animation-delay: 2s;
+            animation-delay: 2.4s;
           }
     }
 }
@@ -124,25 +124,29 @@
         height: 2px;
         border-radius: 15px;
         background-color: #f19101;
-        -webkit-animation: increase-menu 1s;
-        -moz-animation:    increase-menu 1s;
-        -o-animation:      increase-menu 1s;
-        animation:         increase-menu 1s;
+        -webkit-animation: increase-menu .5s;
+        -moz-animation:    increase-menu .5s;
+        -o-animation:      increase-menu .5s;
+        animation:         increase-menu .5s;
         animation-fill-mode: forwards;
         margin: 5px;
     }
 
+    li{
+        animation: fadeIn .5s 1;
+    }
+
     li:nth-child(1) {
-        animation-delay: 0.2s;
+        animation-delay: 0.1s;
       }
     li:nth-child(2) {
-        animation-delay: 0.4s;
+        animation-delay: 0.2s;
       }
     li:nth-child(3) {
-        animation-delay: 0.6s;
+        animation-delay: 0.3s;
       }
     li:nth-child(4) {
-        animation-delay: 0.8s;
+        animation-delay: 0.4s;
       }
 
     .line-1 {
