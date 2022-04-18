@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import * as Mail from 'nodemailer/lib/mailer';
 import * as SMTPConnection from 'nodemailer/lib/smtp-connection';
 import { HttpClientModule } from '@angular/common/http';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
