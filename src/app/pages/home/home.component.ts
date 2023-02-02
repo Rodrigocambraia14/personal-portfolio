@@ -41,5 +41,6 @@ export class HomeComponent implements OnInit{
     this.downloaded = true;
   }, 2900 );
       
+  
   }
 }
