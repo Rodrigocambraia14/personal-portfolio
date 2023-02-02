@@ -64,6 +64,10 @@
     
 }
 
+.last {
+    margin-bottom: 90px;
+}
+
 .card:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -74,7 +78,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+    margin-bottom: 65px;
+
     h2 {
         color: #f19101;
         font-size: 12px;
